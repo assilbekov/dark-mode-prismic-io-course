@@ -1,5 +1,9 @@
 export const navigationItems = [
   {
+    label: "Getting started",
+    href: "/getting-started",
+  },
+  {
     label: "Home",
     href: "/",
   },
@@ -11,4 +15,4 @@ export const navigationItems = [
     label: "Contact",
     href: "/contact",
   },
-]
+];
