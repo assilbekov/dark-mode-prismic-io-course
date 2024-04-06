@@ -1,3 +1,5 @@
+"use client";
+
 import { WordMark } from "@/components/WordMark";
 import { navigationItems } from "@/navigationItems";
 import Link from "next/link";
@@ -21,5 +23,5 @@ export const Navbar = () => {
         </ul>
       </div>
     </nav>
-  )
-}
+  );
+};
