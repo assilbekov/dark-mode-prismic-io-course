@@ -1,10 +1,9 @@
-import { WordMark } from "@/components/WordMark";
+import { Navbar } from "@/components/Navbar";
 
 export const Header = () => {
   return (
     <div>
-      <WordMark />
-      Header
+      <Navbar />
     </div>
   )
 }
