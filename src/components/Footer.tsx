@@ -1,20 +1,6 @@
 import { WordMark } from "@/components/WordMark";
+import { navigationItems } from "@/navigationItems";
 import Link from "next/link";
-
-const navigationItems = [
-  {
-    label: "Home",
-    href: "/",
-  },
-  {
-    label: "About",
-    href: "/about",
-  },
-  {
-    label: "Contact",
-    href: "/contact",
-  },
-]
 
 export const Footer = () => {
   return (
