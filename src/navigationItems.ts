@@ -2,6 +2,7 @@ export const navigationItems = [
   {
     label: "Getting started",
     href: "/getting-started",
+    ctaButton: true,
   },
   {
     label: "Home",

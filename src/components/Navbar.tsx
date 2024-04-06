@@ -3,6 +3,7 @@
 import { WordMark } from "@/components/WordMark";
 import { navigationItems } from "@/navigationItems";
 import Link from "next/link";
+import { ButtonLink } from "@/components/ButtonLink";
 
 export const Navbar = () => {
   return (
@@ -13,13 +14,18 @@ export const Navbar = () => {
           <span className="sr-only">Glisten.ai Home page</span>
         </Link>
         <ul className="flex gap-6">
-          {navigationItems.map((item) => (
-            <li key={item.href}>
-              <Link href={item.href} className="flex min-h-11 items-center">
-                {item.label}
-              </Link>
-            </li>
-          ))}
+          {navigationItems.map((item) => {
+            if (item.ctaButton) {
+              return <ButtonLink key={item.href}>{item.label}</ButtonLink>;
+            }
+            return (
+              <li key={item.href}>
+                <Link href={item.href} className="flex min-h-11 items-center">
+                  {item.label}
+                </Link>
+              </li>
+            );
+          })}
         </ul>
       </div>
     </nav>
