@@ -16,8 +16,18 @@ export const Navbar = () => {
         <ul className="flex gap-6">
           {navigationItems.map((item) => {
             if (item.ctaButton) {
-              return <ButtonLink key={item.href}>{item.label}</ButtonLink>;
+              return (
+                <li key={item.href}>
+                  <ButtonLink
+                    href={item.href}
+                    className="rounded-md bg-white px-4 py-2 text-gray-900"
+                  >
+                    {item.label}
+                  </ButtonLink>
+                </li>
+              );
             }
+
             return (
               <li key={item.href}>
                 <Link href={item.href} className="flex min-h-11 items-center">

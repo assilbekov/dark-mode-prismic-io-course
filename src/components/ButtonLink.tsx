@@ -1,7 +1,14 @@
-interface ButtonLinkProps {
+import Link, { LinkProps } from "next/link";
+
+interface ButtonLinkProps extends LinkProps {
+  className: string;
   children: React.ReactNode;
 }
 
 export function ButtonLink(props: ButtonLinkProps) {
-  return <div>ButtonLink</div>;
+  return (
+    <Link className={props.className} href={props.className}>
+      ButtonLink
+    </Link>
+  );
 }

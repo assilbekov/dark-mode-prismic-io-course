@@ -1,10 +1,5 @@
 export const navigationItems = [
   {
-    label: "Getting started",
-    href: "/getting-started",
-    ctaButton: true,
-  },
-  {
     label: "Home",
     href: "/",
   },
@@ -15,5 +10,10 @@ export const navigationItems = [
   {
     label: "Contact",
     href: "/contact",
+  },
+  {
+    label: "Getting started",
+    href: "/getting-started",
+    ctaButton: true,
   },
 ];
