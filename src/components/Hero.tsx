@@ -10,7 +10,7 @@ export const Hero = () => {
       <Image
         src={HeroImage}
         style={{ width: "100vw", height: "auto" }}
-        alt="hero"
+        alt="Hero image"
       />
     </Bounded>
   );
