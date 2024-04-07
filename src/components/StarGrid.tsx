@@ -58,12 +58,12 @@ export default function StarGrid() {
       });
 
       tl.to(".star-grid-item", {
-        delay: 8,
+        delay: 6,
         repeat: -1,
-        repeatDelay: 8,
+        repeatDelay: 6,
         keyframes: [
           {
-            scale: 2,
+            scale: 3,
             duration: 0.6,
             rotate: "+=90",
             color: "#ffd057",
